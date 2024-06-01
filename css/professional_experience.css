@@ -1,25 +1,35 @@
-.professional-experience h2 {
-  font-weight: 700;
-}
-
-.professional-experience p {
-  margin-bottom: 1rem;
-}
-
 .professional-experience {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
   list-style: none;
-  padding-left: 1.25rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  gap: 10px;
+  color: #fff;
 }
 
-.professional-experience span::before {
-  content: "";
+.professional-experience li {
+  padding: 0;
+}
+
+.professional-experience li h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.professional-experience li span {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.professional-experience li p {
+  margin: 0;
+}
+
+.professional-experience li span::before {
+  content: "\f073";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
   display: inline-block;
-  background-image: url("assets/icons/calendar.svg");
-  width: 0.75rem;
-  height: 0.75rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 5px;
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
 }

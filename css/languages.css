@@ -6,23 +6,24 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-inline-start: 0;
+  padding: 1rem;
+  gap: 0 1rem;
+  row-gap: 1rem;
 }
 
 .languages li {
-  padding: 0 2rem 1rem 1rem;
+  padding: 0 2rem 0 0;
   font-weight: 700;
   font-size: 0.7rem;
   color: #fff;
 }
 
 .languages li::before {
-  content: "";
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
   display: inline-block;
-  width: 1rem;
-  height: 0.5rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./assets/icons/check.svg");
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
   transition: 0.25s;
 }
