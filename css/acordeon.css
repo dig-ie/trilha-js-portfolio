@@ -3,7 +3,7 @@
   flex-direction: column;
   border: solid 1px #fff;
   border-radius: 1rem;
-  z-index: 0 !important;
+  z-index: 0;
   width: 80%;
   margin-bottom: 10px;
 }
@@ -35,13 +35,10 @@
 }
 
 .acordeon .trigger::after {
-  content: "";
-  display: inline-block;
-  width: 1rem;
-  height: 0.5rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(".././assets/icons/arrow.svg");
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 0.7rem;
   transition: 0.25s;
 }
 .acordeon .content {
@@ -59,8 +56,6 @@
 .acordeon.open .content {
   display: inline-block;
   height: auto;
-  opacity: 1 !important;
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
+  opacity: 1;
   text-overflow: ellipsis;
 }

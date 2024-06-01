@@ -3,14 +3,11 @@
   src: url("./assets/fonts/NeueMachina-Regular.otf") format("otf");
 }
 .card {
-  /* Width: 1643px;
-    Height: 2011px; */
   width: 70%;
   overflow-x: hidden;
-  border: 1px solid #fff;
+  border: 0.6px solid #fff;
   margin-top: 4rem;
   margin-bottom: 1rem;
-  border-width: 0.6px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -18,7 +15,7 @@
   padding-bottom: 2rem;
 }
 
-.name-container h1{
+.name-container h1 {
   font-size: 15px;
 }
 .card-header {
@@ -26,7 +23,7 @@
   flex-direction: row;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  z-index: 1 !important;
+  z-index: 1;
   justify-content: center;
 }
 
@@ -39,8 +36,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw !important;
-  height: 100vh !important;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
   max-height: 100vh;
 }
@@ -54,9 +51,9 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 100vw !important;
-  height: 100vh !important;
-  z-index: -1 !important;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
   transform: rotate(180deg);
 }
 .informations {
@@ -66,28 +63,30 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  gap: 5px;
 }
 .info-icon {
-  width: 7px;
-  height: 7px;
-  margin-right: 6px;
+  font-size: 0.7rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: #fff;
 }
 .info-container {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   font-size: smaller;
-  margin-bottom: 5px;
+  gap: 6px;
+  margin: 0;
 }
 .profile-picture {
   border-radius: 217.97px;
   width: 6rem;
   height: 6rem;
-  /* margin-right: 1rem;
-  margin-left: 1rem; */
   margin: auto;
-  padding:10px;
-  z-index: 1 !important;
+  padding: 10px;
+  z-index: 1;
 }
 #name {
   font-family: "neue-machina";
@@ -98,36 +97,52 @@
   margin-bottom: 5px;
 }
 
-#dioIconContainer{
+.dio-icon-container {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-#dioIcon{
-  width:50px;
-  height:40px;
+
+.dio-icon {
+  font-size: 2.5rem;
+  color: #fff;
   margin-right: 45px;
+  transition: 0.25s;
 }
 
+.dio-icon:hover {
+  color: rgba(85, 86, 158, 1);
+}
 
+/* Classes generalizadas para conteúdo de seções */
+.content-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 1.25rem;
+  padding-bottom: 1rem;
+  gap: 10px;
+  color: #fff;
+}
+
+.content-list-item {
+  padding: 0;
+  margin: 0;
+}
+
+.content-list h2,
+.content-list h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.content-list p {
+  margin-bottom: 1rem;
+}
 
 @media screen and (max-width: 420px) {
   .card {
     min-width: 289px;
   }
 }
-
-/* @media screen and (max-width: 400px) {
-  .profile-picture {
-    width: 5rem;
-    height: 5rem;
-  }
-  .name-container h1{
-    font-size: 13px;
-  }
-
-  .info-container p {
-    font-size: 8px;
-  }
-} */
