@@ -27,80 +27,77 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- DevIcons for technologies -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <div class="card">
       <header class="card-header">
-        <img id="profile.photo"
+        <img
+          id="profile.photo"
           class="profile-picture"
           src="assets/imgs/profile-picture.jpg"
           alt="foto de perfil"
         />
         <div class="informations">
           <div class="name-container">
-            <h1 >
+            <h1>
               Olá,<br />
               eu sou o <br /><span id="profile.name">Diêgo de Barros</span>
             </h1>
           </div>
           <div class="info-container">
-            <img
-              class="info-icon"
-              src="./assets/icons/profile.svg"
-              alt="Ícone de avatar"
-            />
+            <i class="fas fa-briefcase info-icon"></i>
             <p id="profile.job">Desenvolvedor Front-End</p>
           </div>
           <div class="info-container">
-            <img
-              class="info-icon"
-              src="./assets/icons/location.svg"
-              alt="Ícone de localização"
-            />
+            <i class="fas fa-map-marker-alt info-icon"></i>
             <p id="profile.location">Recife - PE</p>
           </div>
           <div class="info-container">
-            <img
-              class="info-icon"
-              src="./assets/icons/number.svg"
-              alt="Ícone do WhatsApp"
-            />
+            <i class="fab fa-whatsapp info-icon"></i>
             <p id="profile.phone">(81)98853-2136</p>
           </div>
           <div class="info-container">
-            <img
-              class="info-icon"
-              src="./assets/icons/email.svg"
-              alt="Ícone de e-mail"
-            />
+            <i class="fas fa-envelope info-icon"></i>
             <p id="profile.email">debarrosdiego415@gmail.com</p>
           </div>
         </div>
       </header>
       <section class="acordeon" id="skills_acordeon">
         <button class="trigger">Skills</button>
-        <div class="content" id="skills_content">
-          <section class="professional_skills">
-            <h3>Ferramentas</h3>
-            <br />
-            <ul id="profile.skills1.hardSKills">
-              <li><img  src="./assets/icons/whitejs.svg" alt="" /></li>
-              <li><img  src="./assets/icons/whitecss.svg" alt="" /></li>
-              <li><img  src="./assets/icons/whitemysql.svg" alt="" /></li>
-              <li><img  src="./assets/icons/whitejava.svg" alt="" /></li>   
-            </ul>
-          </section>
-          <section class="personal_skills">
-            <h3>Habilidades pessoais</h3>
-            <br />
-            <ul id="profile.skills1.softSkills">
-              <li>Facilidade com tarefas práticas</li>
-              <li>Comunicação</li>
-              <li>Trabalho em equipe</li>
-              <li>Comprometimento com Resultados</li>
-              <li>Comprometimento com Resultados</li>
-            </ul>
-          </section>
+        <div class="content">
+          <div class="skills">
+            <section class="professional_skills">
+              <h3>Ferramentas</h3>
+              <ul id="profile.skills1.hardSKills">
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-css3-plain"></i></li>
+                <li><i class="devicon-mysql-plain"></i></li>
+                <li><i class="devicon-java-plain"></i></li>
+              </ul>
+            </section>
+            <section class="personal_skills">
+              <h3>Habilidades pessoais</h3>
+              <ul id="profile.skills1.softSkills">
+                <li>Facilidade com tarefas práticas</li>
+                <li>Comunicação</li>
+                <li>Trabalho em equipe</li>
+                <li>Comprometimento com Resultados</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <section class="acordeon">
@@ -116,19 +113,12 @@
         <button class="trigger">Educação</button>
         <div class="content">
           <div class="img-container">
-            <img
-              src="./assets/icons/JS.svg"
-              id="jsIcon"
-              alt="Ícone do JavaScript"
-            />
-            <img src="./assets/icons/css.svg" alt="Ícone do Css" />
-            <img src="./assets/icons/reactIcon.png" alt="Ícone do React" />
-            <img src="./assets/icons/java.svg" alt="Ícone do Java" />
-            <img src="./assets/icons/mysql.svg" alt="Ícone do MySql" />
-            <img
-              src="./assets/icons/scrum.png"
-              alt="Ícone da metodologia Scrum"
-            />
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-css3-plain"></i>
+            <i class="devicon-react-original"></i>
+            <i class="devicon-java-plain"></i>
+            <i class="devicon-mysql-plain"></i>
+            <i class="fas fa-project-diagram"></i>
           </div>
 
           <ul id="profile.education" class="education">
@@ -181,7 +171,7 @@
       </section>
       <section class="acordeon">
         <button class="trigger">Portfólio</button>
-        <div class="content" id="portfolio_list_container">
+        <div class="content">
           <ul id="profile.portfolio" class="portfolio_list">
             <li>
               <h3>Pokedéx com dados da PokeApi (JS Vanilla)</h3>
@@ -213,12 +203,13 @@
       <section class="acordeon">
         <button class="trigger">Experiência Profissional</button>
         <div class="content">
-          <ul id="profile.professionalExperience" class="professional-experience">
+          <ul
+            id="profile.professionalExperience"
+            class="professional-experience"
+          >
             <li>
               <h2>Software Support</h2>
-              <br />
               <span>Aug 2022 - Current</span>
-              <br /><br />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
                 deleniti cupiditate magni, praesentium similique aut dignissimos
@@ -228,9 +219,7 @@
             </li>
             <li>
               <h2>Front End - Programa de Residência Porto Digital (SiDi)</h2>
-              <br />
               <span>2022.2</span>
-              <br /><br />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
                 aliquam totam repellendus possimus doloremque cumque enim vero,
@@ -242,15 +231,11 @@
         </div>
       </section>
 
-      <div id="dioIconContainer">
-        <a href="https://www.dio.me/en" target="_blank"><img id="dioIcon"
-          class="info-icon"
-          src="./assets/icons/dio.svg"
-          alt="Ícone de e-mail"
-        /></a>
-        
+      <div class="dio-icon-container">
+        <a href="https://www.dio.me/en" target="_blank">
+          <i class="fas fa-graduation-cap dio-icon"></i>
+        </a>
       </div>
-      
     </div>
 
     <script src="./js/acordeon.js"></script>
